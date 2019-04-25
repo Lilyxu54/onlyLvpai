@@ -23,9 +23,8 @@
   position: relative;
 }
 .wrap_header .header {
-  max-width: 1800px;
-  width: 78%;
-  min-width: 1300px;
+  max-width: 1834px;
+  width: 1300px;
   height: 100px;
   margin: auto;
   position: relative;
@@ -35,14 +34,14 @@
   padding-top: 26px;
 }
 .wrap_header .header .nav {
-  width: 66%;
+  width: 900px;
   float: left;
-  padding: 36px 0 40px 90px;
+  padding: 36px 0 40px 50px;
   font-size: 16px;
 }
 .wrap_header .header .nav li {
   float: left;
-  margin-right: 32px;
+  padding: 0 1.5%;
   overflow: hidden;
 }
 .wrap_header .header .nav li ul {
@@ -64,6 +63,7 @@
   display: block;
 }
 .wrap_header .header .fl {
+  padding-right: 0;
   padding-left: 1%;
 }
 .wrap_header .header .fl div {
@@ -120,20 +120,23 @@
 }
 .slider {
   max-width: 1920px;
-  height: 800px;
+  height: 100%;
   margin: auto;
+  position: relative;
 }
-.slider li {
-  position: absolute;
+.slider ul li {
   display: none;
 }
-.slider li:first-child {
+.slider ul li img {
+  width: 100%;
+}
+.slider ul li:first-child {
   display: block;
 }
 .slider .controls {
   height: 15px;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -148,7 +151,71 @@
 .controls a.active {
   background: #b67e3d;
 }
-.target {
+.target_title {
   padding: 66px 0;
   width: 100%;
+}
+.target_title img {
+  width: 100%;
+}
+.wrap_target {
+  background: #f8f8f8;
+}
+.wrap_target .target {
+  width: 1300px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+.wrap_target .target .big_title {
+  width: 435px;
+  margin: auto;
+}
+.wrap_target .target .big_title li {
+  font-size: 14px;
+  float: left;
+  width: 70px;
+  height: 57px;
+  background: url('../images/index/t-bg-1.png') no-repeat;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 5px;
+  margin-right: 2px;
+}
+.wrap_target .target .big_title li a {
+  color: #fff;
+}
+.wrap_target .target .tar_nav {
+  width: 100%;
+  padding-top: 35px;
+}
+.wrap_target .target .tar_nav div {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+.wrap_target .target .tar_nav div a {
+  display: inline-block;
+  padding-right: 30px;
+  color: #101010;
+  font-size: 16px;
+}
+.wrap_target .target .tar_nav dl {
+  padding-top: 56px;
+  width: 100%;
+  text-align: center;
+}
+.wrap_target .target .tar_nav dl a {
+  display: inline-block;
+  padding-right: 30px;
+  color: #101010;
+  font-size: 16px;
+}
+.target .big_title li.on {
+  background: url('../images/index/t-bg-2.png') no-repeat;
+}
+@media only screen and (max-width: 1800px) and (min-width: 1200px) {
+  .header .nav {
+    padding-left: 4.5%;
+    width: 66%;
+  }
 }
