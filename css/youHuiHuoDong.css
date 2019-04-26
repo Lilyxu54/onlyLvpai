@@ -1,0 +1,55 @@
+.nav-top {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background-color: #a8a8a8;
+}
+.nav {
+  width: 100%;
+  height: 100px;
+  line-height: 50px;
+  background-color: black;
+}
+.photo {
+  width: 100%;
+}
+.photo .activity {
+  margin: 50px 0;
+}
+.w div {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.w div img {
+  width: 100%;
+}
+.w div h4 {
+  font-weight: 400;
+  margin-top: 20px;
+}
+.w div h4 span {
+  float: right;
+}
+.w div h2 {
+  font-size: 22px;
+  line-height: 50px;
+  border-bottom: 1px solid #efebe4;
+  margin-bottom: 10px;
+}
+.w div .now {
+  float: right;
+  display: block;
+  width: 120px;
+  height: 22px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  background-color: red;
+}
+.bot {
+  margin-top: 100px;
+}
+.bot img {
+  width: 100%;
+}
