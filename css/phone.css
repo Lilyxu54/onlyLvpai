@@ -1,0 +1,200 @@
+/* 顶部样式 */
+body{
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+*{
+    font-size: 14px;
+}
+.navbar-inverse{
+    height: 50px;
+    border: 0;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.container>.navbar-header{
+    display: flex;
+}
+/* 按钮 */
+.btn{
+    flex: 1; 
+    padding: 0;
+    border: 0;
+}
+.navbar-toggle {
+    position: relative;
+    padding: 0 10px;
+    margin: 0;
+    border: 0;
+    float: left;
+    line-height: 50px;
+    height: 50px;
+}
+/* 标题 */
+.navbar-brand {
+    flex: 1;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+}
+/* 小图标 */
+.icon{
+    flex: 1;
+    display: flex;
+}
+.icon a{
+    line-height: 50px;
+    width: 50%;
+    text-align: right;
+}
+.icon .wb{
+    text-align: center;
+}
+/* 主要内容部分 */
+.content{
+    margin-top: 50px;
+    padding: 0;
+}
+/* 导航列表 */
+.navRow{
+    margin: 0;
+    background-color: #444; 
+    display: flex ;
+}
+.navRow div{
+    padding: 0;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+.navRow div a{
+    color: #fff;
+    font-size: 10px;
+}
+.navRow div span{
+    display: block;
+    color: #aaa;
+    font-size: 10px; 
+    transform: scale(0.6);
+}
+.active{
+    background-color: red;
+    color: #FFF;
+}
+.afff{
+    color: #fff !important;
+}
+/* 轮播图样式 */
+.swiper-container{
+    overflow: hidden;
+}
+.swiper-container img{
+    width: 120%;
+}
+/* 轮播图下标题 */
+.title{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.title span{
+    font-size: 17px;
+    color: #000;
+}
+.stitle{
+    color: #666;
+    font-size: 10px;
+    text-align: center;
+    transform: scale(0.7);
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.stitle video{
+    width: 100%;
+}
+/* 切换按钮 */
+.qhbtn{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.qhbtn .col-xs-12{
+    display: flex;
+}
+.qhbtn span{
+    flex: 1;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    font-size: 10px;
+    margin: 0 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #aaa;
+    background-color: #333;
+    color: #fff;
+}
+/* 地点选项卡 */
+.optionTit div{
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 0;
+}
+.optionCont{
+    display: none;
+}
+.optionCont div{
+    padding: 0;
+}
+.optionCont img{
+    width: 100%;
+}
+.bckRed{
+    background-color: red !important;
+    color: #fff;
+}
+.show{
+    display: block;
+}
+
+/* 视频 */
+.video{
+    position: relative;
+    margin-top: -25px;
+}
+.video .videoBtn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    top: 45%;
+    transform: translate(-50%);
+    z-index: 1000;
+}
+
+/* 红色按钮 */
+/* 媒体查询 */
+@media screen and (min-width: 768px) {
+    .navbar-header .icon{
+        display: none;
+    }
+    .navRow{
+        display: none;
+    }
+    .swiper-container{
+        width: 100%;
+        height: auto;
+    }
+}
