@@ -16,20 +16,21 @@ $('.wrap_top').mouseleave(function () {
   // 两个隐藏盒子的展示 中国和世界
   $('.header div.fl').find('div').mouseenter(function(){
     var index = $(this).index()
-    $('.index-slide').eq(index).stop().fadeIn(500);
-     
+    $('.index-slide').eq(index).stop().fadeIn(500)
+    .siblings('.index-slide').fadeOut();  
   })
-$('.header div.fl').find('div').mouseleave(function () {
-  var index = $(this).index()
-  $('.index-slide').eq(index).stop().fadeOut();
-
+$('.wrap_header').mouseleave(function () {
+  $('.index-slide').stop().fadeOut();
 })
+ 
+
 // 轮播部分
 var timer = setInterval(function () {
   right();
 }, 2000)
 $('.slider').mouseenter(function () {
-  clearInterval(timer)
+  clearInterval(timer);
+ 
 })
 $('.slider').mouseleave(function () {
   timer = setInterval(function () {

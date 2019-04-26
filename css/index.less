@@ -109,7 +109,7 @@
     //  隐藏盒子的设置
     .index-slide {
         position: absolute;
-        right: 150px;
+        right: 10%;
         width: 270px;
         top: 100px;
         height: 580px;
@@ -391,9 +391,14 @@
 
 
 
-@media only screen and (max-width: 1800px) and (min-width: 1200px) {
-    .header .nav {
+@media only screen and(max-width: 1800px) and (min-width: 1200px) {
+   .wrap_header .header .nav {
         padding-left: 4.5%;
         width: 66%;
+    }
+}
+@media only screen and (max-width:1500px) and (min-width:980px){
+    .index-slide{
+        right:0!important;
     }
 }
