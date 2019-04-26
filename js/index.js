@@ -73,6 +73,7 @@ $('.tar_nav div').find('a').mouseenter(function(){
   // console.log(index);
   $('dl ul').eq(num).find('li').eq(index).show().siblings().hide();
   })
+<<<<<<< HEAD
   // 视频中的小图标
   $('.sp1 a').find('img').mouseenter(function(){
     // 这有个坑
@@ -91,6 +92,8 @@ $('.zuoPin-wrapper li').mouseenter(function(){
   $('.zuoPin-r').find('li').eq(index).stop().show()
   .siblings().stop().hide();
 })
+=======
+>>>>>>> 70123290c823482fcb5cd5e60a3dad8d3681ffd6
  
 
 
