@@ -188,8 +188,18 @@ i,em {
   width: 100%;
   margin-bottom: 50px;
 }
+.w div:hover {
+  color: #bfaf93;
+}
+.w div a:hover {
+  color: #bfaf93;
+}
 .w div img {
   width: 100%;
+  transition: all 0.6s;
+}
+.w div img:hover {
+  transform: scale(1.2);
 }
 .w div h4 {
   font-weight: 400;
