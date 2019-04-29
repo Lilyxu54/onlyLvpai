@@ -1,19 +1,29 @@
 /* 顶部样式 */
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.row{
+    margin: 0;
+}
 body{
     font-family: "\5FAE\8F6F\96C5\9ED1";
-}
-*{
-    font-size: 14px;
 }
 .navbar-inverse{
     height: 50px;
     border: 0;
+    width: 100%;
+}
+.navbar-inverse .container{
+    padding: 0;
 }
 .navbar-inverse .navbar-brand {
     color: #fff;
 }
 .container>.navbar-header{
-    display: flex;
+    position: fixed;
+    margin: 0;
 }
 /* 按钮 */
 .btn{
@@ -56,12 +66,12 @@ body{
 .content{
     margin-top: 50px;
     padding: 0;
+    width: 100%;
 }
 /* 导航列表 */
 .navRow{
     margin: 0;
     background-color: #444; 
-    display: flex ;
 }
 .navRow div{
     padding: 0;
@@ -184,7 +194,29 @@ body{
     z-index: 1000;
 }
 
-/* 红色按钮 */
+/* 地点选项 */
+.didian{
+    height: 52px;
+    display: flex;
+    overflow-x: auto;
+}
+.didian::-webkit-scrollbar { 
+    display: none;
+}
+.didian a{
+    color: #333;
+    padding: 0 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+.didian span{
+    display: block;
+}
+.didian img{
+    transform: scale(0.7);
+}
+
+
 /* 媒体查询 */
 @media screen and (min-width: 768px) {
     .navbar-header .icon{
