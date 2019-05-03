@@ -10,7 +10,7 @@ var datas = [
     { src: 'images/xinwenImg/20181210022730281.jpg', h2: 'ONLY PHOTO | 周觅：时光相伴十年路，归来仍旧是少年', p: 'Super Junior-M成员、画报里的王子、可动感、可深情和唯一视觉一同“寻踪觅迹”', span: 'ONLY TRAVEL PHOTO', i: 'TIME:2019.04.01', a: "NOW" },
     { src: 'images/xinwenImg/20181113100905132.jpg', h2: '中国体坛大喜事！世界冠军洪炜和金牌女神赵芸蕾结婚了！', p: '很多冠军夫妇在这里相识相知相爱，今年羽坛又多了一对冠军夫妇：洪炜&赵芸蕾', span: 'ONLY TRAVEL PHOTO', i: 'TIME:2019.04.01', a: "NOW" },
     { src: 'images/xinwenImg/20181024035807644.jpg', h2: '“尽情双11” | 唯一视觉2018双十一启动大会盛况报道', p: '为备战2018年双11，唯一视觉于10月17日晚间21：00整举办了2018双11启动大会', span: 'ONLY TRAVEL PHOTO', i: 'TIME:2019.04.01', a: "NOW" },
-    { src: 'images/xinwenImg/20181024104619607.jpg', h2: '如果将30岁，我想活成张俪这样', p: '她如何活成别的女孩都羡慕的模样？《远大前程》中风情万种的小阿俏、《金牌投资人》中霸气女总裁苏晋,她就是张俪', span: 'ONLY TRAVEL PHOTO', i: 'TIME:2019.04.01', a: "NOW" },
+    { src: 'images/xinwenImg/20181024104619607.jpg', h2: '如果将30岁，我想活成张俪这样', p: '她如何活成别的女孩都羡慕的模样？《金牌投资人》中霸气女总裁苏晋,她就是张俪', span: 'ONLY TRAVEL PHOTO', i: 'TIME:2019.04.01', a: "NOW" },
     { src: 'images/xinwenImg/20181023050058792.jpg', h2: '中国LOL首个世界冠军大婚，林更新易烊千玺圈中好友送祝福', p: '中路AP、老WE队长、WGT赛冠军、中国LOL首个世界冠军 他便是禹景曦', span: 'ONLY TRAVEL PHOTO', i: 'TIME:2019.04.01', a: "NOW" }
 ];
 //循环遍历数据datas
