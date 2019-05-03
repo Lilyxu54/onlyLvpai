@@ -79,25 +79,11 @@ $('.tar_nav div').find('a').mouseenter(function(){
   // console.log(index);
   $('dl ul').eq(num).find('li').eq(index).show().siblings().hide();
   })
-<<<<<<< HEAD
-  // 视频中的小图标
-  $('.sp1 a').find('img').mouseenter(function(){
-    // 这有个坑
-    $(this).css("transform","rotate(360deg)")
-          .css("transition","2s")
-  })
-$('.sp1 a').find('img').mouseleave(function () {
-  // 这有个坑 键值对 {transform："rotate" + (360 + "deg")}
-  $(this).css("transform", "rotate(-360deg)")
-    .css("transition", "2s")
- 
-=======
   // video 部分
 $('.text a').mouseenter(function () {
   $(this).find('img').css('transform', 'rotate(360deg)')
   .css('transition','1s');
 
->>>>>>> 4fc9feb46805c863a886674b8d632b8892135cf1
 })
   $('.text a').mouseleave(function(){
     $(this).find('img').css('transform','rotate(-360deg)')
@@ -109,10 +95,6 @@ $('.zuoPin-wrapper ul').find('li').mouseenter(function(){
   var index = $(this).index();
   $('.zuoPin-r li').eq(index).show().siblings().hide();
 })
-<<<<<<< HEAD
-
- 
-=======
   // 三月轮播图开始
   startMove();
   function startMove(){
@@ -128,7 +110,6 @@ $('.zuoPin-wrapper ul').find('li').mouseenter(function(){
     $('.autoplay_wrapper').mouseenter(function () {
       clearInterval(timer)
     })
->>>>>>> 4fc9feb46805c863a886674b8d632b8892135cf1
 
     function startMove() {
       num++;
@@ -178,4 +159,92 @@ $('.zuoPin-wrapper ul').find('li').mouseenter(function(){
 
   }
   // 三月份结束
+  // focus 轮播图开始
+  focusAutoplay();
+  function focusAutoplay(){
+    auto();
+    var timer;
+    $('.focus').mouseenter(function(){
+      clearInterval(timer)
+    })  
+    $('.focus').mouseleave(function(){
+      timer = setInterval(function(){
+            auto();
+      },2000)
+    }) 
+    var index = 0
+    function auto() {
+       index ++;
+      if (index > $('.focus .bd li').length-1) {
+        index = 0
+      }
+      $('.focus .hd li').eq(index).addClass('on')
+      .siblings().removeClass('on');
+       $('.focus .bd li')
+       .eq(index)
+       .show()
+       .siblings()
+       .hide()   
+    }
+    // $('.focus .hd li').click(function(){
+    //     var num = $(this).index();
+    //     $('.focus .hd li').eq(num).addClass('on').siblings().removeClass('on')
+    //     index = num;
+    //     $('.focus .bd li').eq(index).show().siblings().hide();
+    // })
+    $('.focus .hd ul').on('click','li',function(){
+      console.log(this)
+      var num = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on')
+        index = num;
+        $('.focus .bd li').eq(index).show().siblings().hide();
+    })
+  }
+  // focus轮播图结束
+  // 底部轮播图开始
+  autoplay2();
+  function autoplay2(){
+    var timer;
+    timer = setInterval(function () {
+      left();
+    }, 2000)
+    $('.news').mouseleave(function () {
+      timer = setInterval(function () {
+        left();
+      }, 2000)
+    })
+    $('.news').mouseenter(function () {
+      clearInterval(timer)
+    })
+    $('.prev').click(function () {
+      left();
+    })
+    var index = 0;
+    function left() {
+      if (index >= 8) {
+        $('.temp-wrap ul').css('left', 0);
+        index = 0
+      }
+      index++;
+      var v = -index * 298;
+      $('.temp-wrap ul').stop().animate({
+        left: v
+      }, 500)
+    }
+    $('.next').click(function () {
+
+      if (index <= 0) {
+        $('.temp-wrap ul').css('left', -2384)
+        index = 8;
+      }
+      index--;
+      v = -index * 298
+      $('.temp-wrap ul').stop().animate({
+        left: v
+      }, 500)
+    })
+  }
+   
+  // 底部轮播图结束
+  
 

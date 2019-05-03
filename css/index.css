@@ -400,9 +400,125 @@
   width: 100%;
   height: 100%;
 }
+.focus {
+  width: 100%;
+  position: relative;
+}
+.focus .bd {
+  width: 100%;
+}
+.focus .bd ul li {
+  display: none;
+}
+.focus .bd ul li img {
+  width: 100%;
+}
+.focus .hd {
+  height: 15px;
+  position: absolute;
+  bottom: 30px;
+  left: 45%;
+}
+.focus .hd ul li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 24px;
+}
+.focus .hd ul li.on {
+  background: #fff;
+}
+.wrapNews {
+  height: 770px;
+  background: #1a1a1a;
+}
+.wrapNews .news {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 1300px;
+}
+.wrapNews .news .bd {
+  width: 1170px;
+  margin: auto;
+}
+.wrapNews .news .bd .temp-wrap {
+  position: relative;
+  width: 1192px;
+  overflow: hidden;
+}
+.wrapNews .news .bd .temp-wrap ul {
+  width: 3900px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.wrapNews .news .bd .temp-wrap ul li {
+  float: left;
+  width: 270px;
+  text-align: center;
+  height: 416px;
+  background-color: #fff;
+  margin-right: 28px;
+  position: relative;
+}
+.wrapNews .news .bd .temp-wrap ul li .pic-z img {
+  width: 270px;
+  height: 190px;
+}
+.wrapNews .news .bd .temp-wrap ul li h2 {
+  font-size: 18px;
+  color: #4f4f4f;
+  padding: 20px;
+  padding-bottom: 0;
+  text-align: left;
+  font-weight: normal;
+}
+.wrapNews .news .bd .temp-wrap ul li p {
+  padding-top: 10px;
+  color: #838383;
+  text-align: left;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.wrapNews .news .bd .temp-wrap ul li span {
+  width: 100%;
+  position: absolute;
+  color: #838383;
+  bottom: 0;
+  left: 0;
+  height: 42px;
+  line-height: 42px;
+  border-top: solid 1px #eae3db;
+}
+.wrapNews .news .next {
+  right: 0;
+  left: auto;
+}
+.wrapNews .news .prev {
+  left: 0;
+  right: auto;
+}
+.wrapNews .news .next,
+.wrapNews .news .prev {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 190px;
+}
+.wrapNews .pic-bottom {
+  padding-top: 50px;
+  padding-left: 35%;
+}
 .bottom-pic {
   text-align: center;
   position: relative;
+}
+.bottom-pic img {
+  width: 100%;
 }
 .bottom-pic .bottom-text {
   position: absolute;
@@ -509,6 +625,24 @@
   font-size: 16px;
   color: #fff;
   padding-bottom: 10px;
+}
+.pic-time2 .groupText {
+  z-index: 5;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 100px;
+  height: 100px;
+}
+.pic-time2 .groupText h2 {
+  font-size: 26px;
+}
+.pic-time2 .group2 ul li {
+  float: left;
+}
+.pic-time2 .group2 ul li img {
+  width: 90px;
+  height: 100px;
 }
 @media only screen and (max-width: 1800px) and (min-width: 1200px) {
   .wrap_header .header .nav {
