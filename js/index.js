@@ -61,18 +61,29 @@ function right() {
   if (index >= $('.slider li').length) {
     index = 0;
   }
-  // $('.slider li').eq(index).css('display', 'block')
+    
+    $('.slider li').eq(index).css('display', 'block').animate({
+      opacity: 1
+    }, 500).siblings().css({
+      display: 'none',
+     opacity:0
+    })
+
   //   .siblings().css('display', 'none');
-  $('.slider li').eq(index).fadeIn(500).siblings().fadeOut(500);
+  // $('.slider li').eq(index).stop().fadeIn(1000).siblings().stop().fadeOut(1000);
   $('.controls a').eq(index).addClass('active');
 }
 $('.controls a').click(function () {
   $('.controls a').eq(index).removeClass('active');
   var num = $(this).index();
   index = num;
-  $('.slider li').eq(index).css('display', 'block')
-    .siblings().css('display', 'none');
-  $('.slider li').eq(index).fadeIn(500).siblings().fadeOut(500);
+  $('.slider li').eq(index).css('display', 'block').animate({
+    opacity: 1
+  }, 500).siblings().css({
+    display: 'none',
+    opacity: 0
+  })
+  // $('.slider li').eq(index).fadeIn(500).siblings().fadeOut(500);
   $('.controls a').eq(index).addClass('active');
 })
 }
