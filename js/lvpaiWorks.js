@@ -22,7 +22,24 @@ $('.header div.fl').find('div').mouseenter(function () {
 $('.wrap_header').mouseleave(function () {
     $('.index-slide').stop().fadeOut();
 })
+//明星网红
+$('.wrap_header').mouseleave(function () {
+    $('.index-slide').stop().fadeOut();
+})
 
+$('.nav .show').mouseenter(function () {
+    $('.show ul').stop().show();
+})
+$('.nav .show').siblings().mouseenter(function () {
+
+    $('.show ul').stop().hide();
+}).parent().mouseleave(function () {
+    $('.show ul').stop().hide();
+})
+
+$('.nav .show ul').mouseleave(function () {
+    $('.show ul').stop().hide();
+})
 //主题标题突出显示
 var index = 0;
 $('.big_title li').mouseenter(function(){

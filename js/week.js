@@ -23,6 +23,24 @@ $('.header div.fl').find('div').mouseenter(function(){
 $('.wrap_header').mouseleave(function () {
 $('.index-slide').stop().fadeOut();
 })
+//明星网红
+$('.wrap_header').mouseleave(function () {
+  $('.index-slide').stop().fadeOut();
+})
+ 
+$('.nav .show').mouseenter(function(){
+      $('.show ul').stop().show();
+})
+  $('.nav .show').siblings().mouseenter(function () {
+
+    $('.show ul').stop().hide();
+  }).parent().mouseleave(function(){
+      $('.show ul').stop().hide();
+  })
+
+$('.nav .show ul').mouseleave(function(){
+    $('.show ul').stop().hide();
+})
 // 原创每周客片集  数字导航展示
 $('.week_title li').mouseenter(function() {
     $(this).addClass('on').siblings().removeClass('on');

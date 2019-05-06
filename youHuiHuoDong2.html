@@ -33,25 +33,24 @@
 
             <!-- 导航栏 -->
             <ul class="nav">
-                <li><a href="#">首页</a></li>
-                <li><a href="#">品牌简介</a></li>
-                <li><a href="#">真实客片</a></li>
-                <li><a href="#">旅拍作品</a></li>
-                <li><a href="#">微电影</a></li>
-                <li><a href="#">每周客片</a></li>
-                <li><a href="#"> 新闻中心</a></li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="pinPaiJianJie.html">品牌简介</a></li>
+                <li><a href="kepian.html">真实客片</a></li>
+                <li><a href="lvpaiWorks.html">旅拍作品</a></li>
+                <li><a href="movie.html">微电影</a></li>
+                <li><a href="week.html">每周客片</a></li>
+                <li><a href="xinwen.html"> 新闻中心</a></li>
                 <li class="show">
-                    <a href="#">明星网红</a>
+                    <a href="javascript:">明星网红</a>
                     <ul>
-                        <li> <a href="">明星专区</a></li>
-                        <li><a href="">网红专区</a></li>
+                        <li> <a href="mingxing.html">明星专区</a></li>
+                        <li><a href="wanghong.html">网红专区</a></li>
                     </ul>
-
+            
                 </li>
-                <li><a href="#">真实好评</a></li>
-                <li><a href="#">优惠活动</a></li>
+                <li><a href="comment.html">真实好评</a></li>
+                <li><a href="youHuiHuoDong.html" style="color:rgb(255, 39, 60)">优惠活动</a></li>
             </ul>
-
             <!-- 中国和世界 -->
             <div class="fl">
                 <div class="china"><a href=""><img src="images/index/china.png" alt=""></a></div>
@@ -126,7 +125,16 @@
         <img src="images/youHuiHuoDongImg/d12.jpg" alt="">
         <img src="images/youHuiHuoDongImg/d13.jpg" alt="">
         <img src="images/youHuiHuoDongImg/d14.jpg" alt="">
-        <img src="images/youHuiHuoDongImg/d15.jpg" alt="">
+        <div class="content-t">
+            <a href="#" class="video1">
+                <img src="images/youHuiHuoDongImg/tu1.png" alt="">
+                <video src="video/v1.mp4" style="display:none" controls autoplay></video>
+            </a>
+            <a href="#"><img src="images/youHuiHuoDongImg/tu2.png" alt=""></a>
+            <a href="#"><img src="images/youHuiHuoDongImg/tu3.png" alt=""></a>
+            <a href="#"><img src="images/youHuiHuoDongImg/tu4.png" alt=""></a>
+            <a href="#"><img src="images/youHuiHuoDongImg/tu5.png" alt=""></a>
+        </div>
         <img src="images/youHuiHuoDongImg/d16.jpg" alt="">
         <img src="images/youHuiHuoDongImg/d17.jpg" alt="">
         <img src="images/youHuiHuoDongImg/d19.jpg" alt="">
@@ -158,6 +166,12 @@
         <img src="images/youHuiHuoDongImg/d45.jpg" alt="">
         <img src="images/youHuiHuoDongImg/d46.jpg" alt="">
     </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $('.video1').click(function () {
+            $('video').show();
+        })
+    </script>
 </body>
 
 </html>

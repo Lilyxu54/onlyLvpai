@@ -72,9 +72,8 @@
 .wrap_header .header .nav li a {
     color: #fff; 
 }
-
-.wrap_header .header .nav .show:hover ul {
-    display: block;
+.wrap_header .header .nav li a:hover{
+  color: rgb(255, 39, 60);
 }
 
 .wrap_header .header .fl {

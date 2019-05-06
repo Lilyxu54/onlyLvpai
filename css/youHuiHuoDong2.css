@@ -106,9 +106,9 @@
   .wrap_header .header .nav li a {
     color: #fff;
   }
-  .wrap_header .header .nav .show:hover ul {
-    display: block;
-  }
+  .wrap_header .header .nav li a:hover{
+  color: rgb(255, 39, 60);
+}
   .wrap_header .header .fl {
     padding-right: 0;
     padding-left: 1%;
@@ -180,4 +180,18 @@
   /* 主体 */
   .content img {
       width: 100%;
+  }
+  .content .content-t {
+    background-image: url(../images/youHuiHuoDongImg/pc_15.jpg);
+    padding-left: 395px;
+  }
+  .content .content-t img {
+    width: 219px;
+    height: 528px;
+  }
+  .content-t video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-left: 250px;
   }

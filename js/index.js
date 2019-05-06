@@ -10,21 +10,34 @@ $('.wrap_top').mouseleave(function () {
 
 
 })
-  $('.wrap_top').find('li').eq(3).mouseenter(function(){
-      $('.weixin-open').show(1000);
-  })
-  // 两个隐藏盒子的展示 中国和世界
-  $('.header div.fl').find('div').mouseenter(function(){
-   
-    var index = $(this).index()
-    $('.index-slide').eq(index).stop().fadeIn(500)
-    .siblings('.index-slide').fadeOut();  
-  })
+$('.wrap_top').find('li').eq(3).mouseenter(function(){
+    $('.weixin-open').show(1000);
+})
+// 两个隐藏盒子的展示 中国和世界
+$('.header div.fl').find('div').mouseenter(function(){
+  
+  var index = $(this).index()
+  $('.index-slide').eq(index).stop().fadeIn(500)
+  .siblings('.index-slide').fadeOut();  
+});
+//明星网红
 $('.wrap_header').mouseleave(function () {
   $('.index-slide').stop().fadeOut();
 })
  
+$('.nav .show').mouseenter(function(){
+      $('.show ul').stop().show();
+})
+  $('.nav .show').siblings().mouseenter(function () {
 
+    $('.show ul').stop().hide();
+  }).parent().mouseleave(function(){
+      $('.show ul').stop().hide();
+  })
+
+$('.nav .show ul').mouseleave(function(){
+    $('.show ul').stop().hide();
+})
 // 轮播部分
 autoplay1();
 function autoplay1(){
@@ -48,9 +61,9 @@ function right() {
   if (index >= $('.slider li').length) {
     index = 0;
   }
-  $('.slider li').eq(index).css('display', 'block')
-    .siblings().css('display', 'none');
-  $('.slider li').eq(index).fadeIn(1000).siblings().fadeOut();
+  // $('.slider li').eq(index).css('display', 'block')
+  //   .siblings().css('display', 'none');
+  $('.slider li').eq(index).fadeIn(500).siblings().fadeOut(500);
   $('.controls a').eq(index).addClass('active');
 }
 $('.controls a').click(function () {
@@ -59,7 +72,7 @@ $('.controls a').click(function () {
   index = num;
   $('.slider li').eq(index).css('display', 'block')
     .siblings().css('display', 'none');
-  $('.slider li').eq(index).fadeIn(1000).siblings().fadeOut();
+  $('.slider li').eq(index).fadeIn(500).siblings().fadeOut(500);
   $('.controls a').eq(index).addClass('active');
 })
 }
@@ -246,5 +259,13 @@ $('.zuoPin-wrapper ul').find('li').mouseenter(function(){
   }
    
   // 底部轮播图结束
+  // 小组成员展示部分
+  $('.groupText').mouseenter(function(){
+     $('.group2').fadeIn(1000);
+  })
+$('.group2').mouseleave(function(){
+  $('.group2').fadeOut(1000);
+})
+
   
 

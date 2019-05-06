@@ -1,0 +1,67 @@
+.movie {
+    width: 1300px;
+    margin: auto;
+    overflow: hidden;
+}
+.movie .movie_banner {
+    width: 48.5%;
+    height: 353px;
+    margin-left: 10px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+img {
+    vertical-align: middle;
+}
+.movie .movie_banner_cover {
+    width: 630px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.movie .txt {
+    position: absolute;
+    bottom: 33%;
+    width: 510px;
+    left: 50%;
+    margin-left: -255px;
+    color: #FFF;
+}
+.movie h2 {
+    font-size: 26px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+.movie .txt .sp1 {
+    display: block;
+}
+.movie .txt img {
+    display: inline-block;
+}
+.movie .sp2 {
+    display: block;
+    padding-top: 20px;
+    font-size: 27px;
+    font-family: "DINCond-Bold";
+    width: 315px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.movie .sp2 img {
+    float: left;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.movie .sp2 em {
+    float: left;
+}
+.movie_bottom {
+    width: 516px;
+    margin: 0 auto;
+    margin-top: 58px;
+    margin-bottom: 68px;
+}

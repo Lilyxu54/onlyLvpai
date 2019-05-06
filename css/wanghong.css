@@ -1,0 +1,29 @@
+.banner img {
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  margin: auto;
+  display: block;
+}
+.banner .banner-nav {
+  height: 68px;
+  text-align: center;
+  width: 100%;
+  background: #080608;
+  opacity: 0.8;
+}
+.banner .banner-nav a {
+  padding-right: 8px;
+  display: inline-block;
+  padding-left: 8px;
+  height: 16px;
+  margin-top: 26px;
+  line-height: 16px;
+  color: #080608;
+  border-right: solid 1px #fff;
+  color: #FFF;
+  text-decoration: none;
+}
+.target-title img {
+  width: 100%;
+}
