@@ -50,10 +50,11 @@
   z-index: 999;
   top: 100px;
   color: #000000;
-  width: 100px;
+  width: 90px;
   background-color: rgba(0, 0, 0, 0.5);
   height: 96px;
   padding-top: 10px;
+  padding-left: 10px;
   text-align: center;
 }
 .wrap_header .header .nav li a {

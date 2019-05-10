@@ -64,7 +64,7 @@ function right() {
     
     $('.slider li').eq(index).css('display', 'block').animate({
       opacity: 1
-    }, 500).siblings().css({
+    }, 200).siblings().css({
       display: 'none',
      opacity:0
     })
@@ -79,7 +79,7 @@ $('.controls a').click(function () {
   index = num;
   $('.slider li').eq(index).css('display', 'block').animate({
     opacity: 1
-  }, 500).siblings().css({
+  }, 200).siblings().css({
     display: 'none',
     opacity: 0
   })
@@ -90,7 +90,7 @@ $('.controls a').click(function () {
 
 // 200 部分
 // 鼠标进入 big_title 部分 会切换类名 切换样式 并且显示相应的div 和相应的ul
-var num = 0
+var num = 0;
 $('.big_title li').mouseenter(function(){
    num = $(this).index();
   $(this).addClass('on').siblings().removeClass('on');
@@ -268,7 +268,24 @@ $('.zuoPin-wrapper ul').find('li').mouseenter(function(){
       }, 500)
     })
   }
-   
+checkInput('#xm',/^[\u4e00-\u9fa5]{2,4}$/,'输入格式错误')
+checkInput('#sj',/^\d{11}$/,'请输入正确的手机号')
+function checkInput(selector, reg, tipStr) {
+ 
+  var element = document.querySelector(selector);
+ 
+  element.onblur = function () {
+    var span = this.nextElementSibling;
+    var str = this.value;
+
+    if (reg.test(str)) {
+      span.innerHTML = '';
+    } else {
+      span.innerHTML = tipStr;
+
+    }
+  };
+}
   // 底部轮播图结束
   // 小组成员展示部分
   $('.groupText').mouseenter(function(){

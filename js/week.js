@@ -58,16 +58,14 @@ $('.all_item .item img').mouseleave(function() {
     $(this).css('border','5px solid #f5f5f5');
 });
 $('.week_content .show img').click(function() {
-    $('.kepian').show();
-    $('.week_content').hide();
+  $('.wrap_target').css('background','#fff');
+  $('.kepian').show();
+  $('.week_content').hide();
+  $('h4').hide();
 });
 $('.kepian .banck_list a').click(function() {
-    $('.week_content').show();
-    $('.kepian').hide();
+  $('.wrap_target').css('background','#f0f0f0');
+  $('.week_content').show();
+  $('h4').show();
+  $('.kepian').hide();
 });
-// var v='../images/week/';
-// $('.all_item .item').click(function() {
-//     var index=$(this).index;
-//     var bsrc=$(this).find('img').attr('bsrc');
-//     $('.big img').attr('src',v+bsrc);
-// });

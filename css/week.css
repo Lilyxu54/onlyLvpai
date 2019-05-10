@@ -293,6 +293,7 @@
 }
 
 .week_content li img {
+    width: 100%;
     border: 25px solid #fff;
     margin-bottom: 52px;
 }
@@ -403,20 +404,27 @@
     position: absolute;
     left: 0;
     top: 80px;
+    transition: 0.5s linear;
+}
+.prev-next .prev:hover {
+    transform: rotate(-360deg);
 }
 .prev-next .next {
     position: absolute;
     right: 0;
     top: 80px;
+    transition: 0.5s linear;
 }
-/* .big_pic .big {
-    margin: auto;
-    position: relative;
-    display: none;
+.prev-next .next:hover {
+    transform: rotate(360deg);
 }
-.big_pic .big img {
-    position: absolute;
-} */
+.prev-next .home {
+    display: inline-block;
+    transition: 0.5s linear;
+}
+.prev-next .home:hover {
+    transform: rotate(360deg);
+}
 /* 底部部分 */
 .bottom-pic {
     text-align: center;
