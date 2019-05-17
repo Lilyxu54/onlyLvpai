@@ -50,18 +50,20 @@
   z-index: 999;
   top: 100px;
   color: #000000;
-  width: 90px;
+  width: 100px;
   background-color: rgba(0, 0, 0, 0.5);
   height: 96px;
   padding-top: 10px;
-  padding-left: 10px;
   text-align: center;
 }
 .wrap_header .header .nav li a {
   color: #fff;
 }
-.wrap_header .header .nav .show:hover ul {
-  display: block;
+.wrap_header .header .nav li a:hover {
+  color: #ff273c;
+}
+.wrap_header .header .nav .show ul li {
+  margin-top: 10px;
 }
 .wrap_header .header .fl {
   padding-right: 0;
@@ -118,6 +120,9 @@
 .wrap_header .index-slide ul li a {
   font-size: 14px;
   color: #fff;
+}
+.wrap_header .index-slide ul li a:hover {
+  color: #b67e3d;
 }
 .wrap_header .index-slide .ul2-l {
   left: 150px;
